@@ -1,11 +1,10 @@
 package me.dio.santanderdevweek.domain.model;
 
+import jakarta.persistence.Entity;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
-@Setter
-public class News {
-    private String icon;
-    private String description;
+@Entity
+public class News extends BaseItem{
+
 }

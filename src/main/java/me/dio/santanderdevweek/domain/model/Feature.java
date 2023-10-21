@@ -1,11 +1,8 @@
 package me.dio.santanderdevweek.domain.model;
 
-import lombok.Getter;
-import lombok.Setter;
+import jakarta.persistence.Entity;
 
-@Getter
-@Setter
-public class Feature {
-    private String icon;
-    private String description;
+@Entity(name = "tb_feature")
+public class Feature extends BaseItem{
+
 }
