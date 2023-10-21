@@ -1,4 +1,4 @@
-package me.dio.santanderdevweek.repository;
+package me.dio.santanderdevweek.domain.repository;
 
 import me.dio.santanderdevweek.domain.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;

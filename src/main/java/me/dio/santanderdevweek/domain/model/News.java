@@ -1,10 +1,8 @@
 package me.dio.santanderdevweek.domain.model;
 
 import jakarta.persistence.Entity;
-import lombok.Getter;
-import lombok.Setter;
 
-@Entity
+@Entity(name = "tb_news")
 public class News extends BaseItem{
 
 }

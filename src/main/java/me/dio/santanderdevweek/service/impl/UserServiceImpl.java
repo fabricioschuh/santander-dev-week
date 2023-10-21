@@ -2,7 +2,7 @@ package me.dio.santanderdevweek.service.impl;
 
 import lombok.AllArgsConstructor;
 import me.dio.santanderdevweek.domain.model.User;
-import me.dio.santanderdevweek.repository.UserRepository;
+import me.dio.santanderdevweek.domain.repository.UserRepository;
 import me.dio.santanderdevweek.service.UserService;
 import org.springframework.stereotype.Service;
 

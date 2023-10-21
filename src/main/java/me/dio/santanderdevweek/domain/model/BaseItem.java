@@ -10,6 +10,7 @@ import java.math.BigDecimal;
 @Setter
 @MappedSuperclass
 public abstract class BaseItem {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
