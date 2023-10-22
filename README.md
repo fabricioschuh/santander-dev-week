@@ -1,6 +1,6 @@
 # Santander Dev Week 2023
 
-JAVA RESTful API for Santader Dev Week
+JAVA RESTful API application for Santader Dev Week
 
 ## Technologies used:
 - **Java 17**
