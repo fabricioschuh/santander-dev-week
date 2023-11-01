@@ -6,6 +6,8 @@ import me.dio.santanderdevweek.domain.repository.UserRepository;
 import me.dio.santanderdevweek.service.UserService;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.NoSuchElementException;
 
 @Service
@@ -27,4 +29,14 @@ public class UserServiceImpl implements UserService {
 
         return userRepository.save(userToCreate);
     }
+
+    @Override
+    public List<User> findAll() {
+        List<User> users = new ArrayList<>();
+        users = userRepository.findAll();
+
+        return users;
+    }
+
+
 }

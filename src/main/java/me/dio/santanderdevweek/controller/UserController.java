@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.net.URI;
+import java.util.List;
 
 @RestController
 @RequestMapping("/users")
@@ -32,7 +33,12 @@ public class UserController {
         return ResponseEntity.created(location).body(userCreated);
     }
 
-    //TODO
+    @GetMapping
+    public ResponseEntity<List<User>> findAll() {
+        List<User> users = userService.findAll();
+        return ResponseEntity.ok(users);
+    }
+
     //find all
     //update
     //delete
